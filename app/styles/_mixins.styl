@@ -1,0 +1,61 @@
+// Cross browser properties
+
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
+  {prop} args
+
+border-radius()
+  vendor('border-radius', arguments)
+
+box-sizing()
+  vendor('box-sizing', arguments)
+
+animation()
+  vendor('animation', arguments)
+
+transition()
+  vendor('transition', arguments)
+
+transform()
+  vendor('transform', arguments)
+  
+box-shadow() 
+  -moz-box-shadow arguments
+  -webkit-box-shadow arguments
+  box-shadow arguments
+
+text-shadow()
+  -moz-text-shadow arguments
+  -webkit-text-shadow arguments
+  text-shadow arguments
+  
+opacity($opacity)
+  opacity $opacity
+  $opacity-ie = $opacity * 100
+  filter unquote('alpha(opacity=' + $opacity-ie + ')') // IE8
+
+// Breakpoints
+
+smartphoneWidth = 768px
+tabletWidth = 992px
+desktopWidth = 1200px
+
+mqSmartphone = 'only screen and (max-width: ' + smartphoneWidth + ')'
+mqTablet = 'only screen and (max-width: ' + tabletWidth + ')'
+mqDesktop = 'only screen and (max-width: ' + desktopWidth + ')'
+
+bp-xs()
+  @media mqSmartphone
+    {block}
+
+bp-sm()
+  @media mqTablet
+    {block}
+    
+bp-md()
+  @media mqDesktop
+    {block}
+    

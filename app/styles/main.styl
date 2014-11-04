@@ -1,0 +1,76 @@
+@import _fonts
+@import _mixins
+@import _variables
+
+html, body
+  height 100%
+  
+body
+  font 300 16px 'Proxima Nova', sans-serif
+  line-height 1.5em
+  color site-text-color
+
+.md-container
+  max-width 960px
+  height 100%
+  padding 0 15px
+  margin 0 auto
+  
+.md-btn
+  height 36px
+  line-height 36px
+  padding 0 15px
+  color site-text-color
+  background-color transparent
+  border solid thin site-text-color
+  border-radius(5px)
+  behavior url('../polyfills/PIE.htc')
+  position relative
+  &.rounded
+    border-radius(18px)
+  &:active
+    box-shadow(0 0 20px site-text-color)
+
+// Header // ------------------------------------------------------
+
+#header
+  height header-height
+  color header-text-color
+  background-color header-bg-color
+  .logo
+    height 90px
+    width 200px
+    background-image url('../images/logo.png')
+    background-position left center
+    background-size 120px auto
+    -ms-behavior url("../polyfills/backgroundsize.min.htc")
+    background-repeat no-repeat
+  .md-navbar
+    line-height header-height
+    a
+      color header-text-color
+  .login-btn
+    margin 27px 0 0 15px
+  
+// Main // --------------------------------------------------------
+      
+#main
+  position relative
+  min-height 100%
+  margin-bottom - footer-height
+ 
+// Footer // ------------------------------------------------------
+
+#footer
+  display table
+  width 100%
+  height footer-height
+  
+  p
+    display table-cell
+    vertical-align middle
+    font-size .75em
+    color #ccc
+
+// Home Page // ---------------------------------------------------
+  

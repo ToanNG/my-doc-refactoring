@@ -1,0 +1,16 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0')
+  title Hearty Brunch
+
+  link(rel='stylesheet' href='/stylesheets/vendor.css')
+  link(rel='stylesheet' href='/stylesheets/app.css')
+
+  // [if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]
+  script(type='text/javascript').
+    if (location.hostname === 'localhost') {
+      window.brunch = window.brunch || {};
+      window.brunch['auto-reload'] = {enabled: true};
+    }
+  script(src='/javascripts/vendor.js')
+  script(src='/javascripts/app.js')
