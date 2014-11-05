@@ -6,7 +6,8 @@
     <title>Hearty Brunch</title>
     <link rel="stylesheet" href="/stylesheets/vendor.css">
     <link rel="stylesheet" href="/stylesheets/app.css">
-    <!-- [if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <!-- [if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <script type="text/javascript">
       if (location.hostname === 'localhost') {
         window.brunch = window.brunch || {};
@@ -20,7 +21,7 @@
     <div id="header">
       <div class="md-container">
         <div class="logo pull-left"></div>
-        <div class="login-btn btn md-btn rounded pull-right">Sign in</div>
+        <div id="login-btn" class="btn md-btn rounded pull-right">Sign in</div>
         <ul class="md-navbar list-inline pull-right">
           <li><a href="patients.html">Patients</a></li>
           <li><a href="professionals.html">Professionals</a></li>
@@ -29,9 +30,43 @@
         </ul>
       </div>
     </div>
-    <div id="main"></div>
+    <div id="main">
+      <div class="md-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">Hello</div>
+            <div class="col-sm-6">Hope</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="footer" class="text-center">
-      <p>Hearty Brunch by Toan Nguyen<br>Artwork by Artsiom "Grlmc" Hlushchenia</p>
+      <div class="md-container fluid-container padding-15">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 class="text-uppercase">About us</h3>
+            <ul class="list-unstyled">
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-uppercase">Mydoc</h3>
+            <ul class="list-unstyled">
+              <li><a href="">Patients</a></li>
+              <li><a href="">Professionals</a></li>
+              <li><a href="">Employers</a></li>
+              <li><a href="">Partners</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-uppercase">Legal</h3>
+            <ul class="list-unstyled">
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  include partials/head
+
+  body.md-body
+    include partials/header
+    #main
+      .section.patients-1.colored-bg.text-center
+        .md-container.fluid-container.padding-15
+          .row
+            .col-sm-12
+              h1 A better way to communicate with your doctor
+              h3 Start your health diary and get help from our medical concierge today
+              br
+              .btn.md-btn.large.rounded.colored.green Register
+              br
+              br
+              .app-store-btn
+              .google-play-btn
+
+      .section.patients-2
+        .md-container.fluid-container.padding-15
+          .row
+            .col-sm-6.col-sm-push-6
+              img.full-width(src="../images/patients_1.png")
+            .col-sm-6.col-sm-pull-6
+              h2 Less Waiting Rooms And Lost Time
+              p A clinic isn't always necessary. Get care whenever you are on any device.
+
+      .section.patients-3
+        .md-container.fluid-container.padding-15
+          .row
+            .col-sm-6.col-sm-push-6
+              img.full-width(src="../images/patients_2.png")
+            .col-sm-6.col-sm-pull-6
+              h2 Good Care Doesn't Stop Outside The Clinic
+              p Your patient diary helps you keep track of how you are feeling and your important test results. When you need to you can share this with your care team.
+
+      .section.patients-4.colored-bg
+        .md-container.fluid-container.padding-15
+          .row
+            .clearfix
+              .col-sm-6.padding-15
+                img.icon(src="../images/patients_icon1.png")
+                .content
+                  h3 Safe and secure
+                  p Everything is automatically private until it is securely shared. You control all of your data. MyDoc is fully HIPAA and PDPA compliant.
+              .col-sm-6.padding-15
+                img.icon(src="../images/patients_icon2.png")
+                .content
+                  h3 Integrates with devices (coming soon)
+                  p Automatically add data from your favourite devices to your health diary.
+            .col-sm-6.padding-15
+              img.icon(src="../images/patients_icon3.png")
+              .content
+                h3 You’re in control of your data
+                p You can store all your communication and important information in one place and take it with you if you need to see a different doctor.
+            .col-sm-6.padding-15
+              img.icon(src="../images/patients_icon4.png")
+              .content
+                h3 Available wherever you are
+                p MyDoc is available on iOS, Android and via our responsive web app.
+    include partials/footer

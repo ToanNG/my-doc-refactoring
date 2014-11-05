@@ -10,12 +10,36 @@ body
   line-height 1.5em
   color site-text-color
 
+.md-body
+  img
+    display block
+    
+  h1
+    line-height 1.25em
+    font-weight 300
+
+  h2
+    line-height 1.5em
+    font-size 1.5em
+    font-weight 400
+    
+  h3
+    line-height 1.5em
+    font-size 1.17em
+    font-weight 400
+  
 .md-container
   max-width 960px
   height 100%
   padding 0 15px
   margin 0 auto
+
+.padding-15
+  padding 15px
   
+.colored-bg
+  background-color header-bg-color
+
 .md-btn
   height 36px
   line-height 36px
@@ -28,15 +52,32 @@ body
   position relative
   &.rounded
     border-radius(18px)
+  &.large
+    height 48px
+    line-height 48px
+    padding 0 30px
+    font-size 18px
+    font-weight 300
+    &.rounded
+      border-radius(24px)
+  &.colored.green
+    color #fff
+    background-color #50d869
+    border none
   &:active
     box-shadow(0 0 20px site-text-color)
 
+.full-width
+  width 100%
+  
 // Header // ------------------------------------------------------
 
 #header
+  overflow hidden
   height header-height
   color header-text-color
   background-color header-bg-color
+  
   .logo
     height 90px
     width 200px
@@ -45,11 +86,14 @@ body
     background-size 120px auto
     -ms-behavior url("../polyfills/backgroundsize.min.htc")
     background-repeat no-repeat
+    
   .md-navbar
     line-height header-height
+    
     a
       color header-text-color
-  .login-btn
+      
+  #login-btn
     margin 27px 0 0 15px
   
 // Main // --------------------------------------------------------
@@ -57,20 +101,46 @@ body
 #main
   position relative
   min-height 100%
-  margin-bottom - footer-height
  
 // Footer // ------------------------------------------------------
 
 #footer
-  display table
   width 100%
-  height footer-height
+  color footer-text-color
+  background-color footer-bg-color
   
-  p
-    display table-cell
-    vertical-align middle
-    font-size .75em
-    color #ccc
-
+  a
+    color footer-text-color
+    text-decoration none
+  
 // Home Page // ---------------------------------------------------
+
+// Patients Page // -----------------------------------------------
+
+.patients-1
+  .app-store-btn
+  .google-play-btn
+    display inline-block
+    width 155px
+    height 54px
+    margin 1em 0
+    cursor pointer
+  .app-store-btn
+    background transparent url(../images/appstore.png) center no-repeat
+  .google-play-btn
+    background transparent url(../images/googleplay.png) center no-repeat
   
+.patients-2
+  h2
+    margin-top 15%
+    
+.patients-4
+  .icon
+    float left
+    
+  .content
+    margin-left 95px
+    padding 0 15px 0 30px
+    
+    h3
+      margin-top 0
