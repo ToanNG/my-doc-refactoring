@@ -40,7 +40,16 @@ body
 .colored-bg
   background-color header-bg-color
 
+.form-control
+  border solid thin #606c84 !important
+
+label
+  font-weight 300 !important
+
 .md-btn
+  outline none !important
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  -webkit-appearance none
   height 36px
   line-height 36px
   padding 0 15px
@@ -64,6 +73,14 @@ body
     color #fff
     background-color #50d869
     border none
+    &:active
+      box-shadow(0 0 20px #50d869)
+  &.colored.blue
+    color #fff
+    background-color #7f93b6
+    border none
+    &:active
+      box-shadow(0 0 20px #7f93b6)
   &:active
     box-shadow(0 0 20px site-text-color)
 
@@ -150,3 +167,14 @@ body
 .professionals-2
   h5
     margin 0
+
+// Contact Page // ------------------------------------------------
+
+.contact-2
+  .contact-form
+    max-width 350px
+    margin 0 auto
+  
+  .md-btn
+    min-width 100px
+    

@@ -1,0 +1,72 @@
+doctype html
+html(lang="en")
+  include partials/head
+
+  body.md-body
+    include partials/header
+    #main
+      .section.contact-1.colored-bg.text-center
+        .md-container.fluid-container.padding-15
+          .row
+            .col-sm-12
+              h1 Get in touch
+              h3 We'll help you evaluate MyDoc for your business, no sales pitch.
+              br
+
+      .section.contact-2
+        .md-container.fluid-container.padding-15
+          .row
+            .col-sm-12.padding-15
+              form.contact-form(role="form")
+                .form-group
+                  label(for="inputName") Name
+                  input#inputName.form-control(type="text")
+                .form-group
+                  label(for="inputEmail") Email
+                  input#inputEmail.form-control(type="text")
+                .form-group
+                  label(for="inputCompany") Company
+                  input#inputCompany.form-control(type="text")
+                .form-group
+                  label(for="inputMessage") Message
+                  textarea#inputMessage.form-control(rows="4")
+                button.btn.md-btn.rounded.colored.blue.pull-right(type="submit") Submit
+      .section.contact-3.colored-bg.text-center
+        .md-container.fluid-container.padding-15
+          .row
+            .col-sm-12
+              h1 Just looking for the basics?
+          .row
+            .col-sm-3.padding-15
+              img.icon.center-block(src="../images/contact_icon1.png")
+              .content
+                h2 PATIENTS
+                p Care, anytime, anywhere
+                a.btn.md-btn.rounded(href="patients.html") Learn more
+                br
+                br
+            .col-sm-3.padding-15
+              img.icon.center-block(src="../images/contact_icon2.png")
+              .content
+                h2 PROFESSIONAL
+                p Expand your practice
+                a.btn.md-btn.rounded(href="professionals.html") Learn more
+                br
+                br
+            .col-sm-3.padding-15
+              img.icon.center-block(src="../images/contact_icon3.png")
+              .content
+                h2 EMPLOYERS
+                p Benefits everyone loves
+                a.btn.md-btn.rounded(href="employers.html") Learn more
+                br
+                br
+            .col-sm-3.padding-15
+              img.icon.center-block(src="../images/contact_icon4.png")
+              .content
+                h2 PARTNERS
+                p Grow with us
+                a.btn.md-btn.rounded(href="partners.html") Learn more
+                br
+                br
+    include partials/footer
