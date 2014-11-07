@@ -69,16 +69,19 @@ label
     font-weight 300
     &.rounded
       border-radius(24px)
-  &.colored.green
+  &.colored
     color #fff
-    background-color #50d869
     border none
+  &.colored.green
+    background-color #50d869
     &:active
       box-shadow(0 0 20px #50d869)
   &.colored.blue
-    color #fff
+    background-color #57a6fd
+    &:active
+      box-shadow(0 0 20px #57a6fd)
+  &.colored.darkblue
     background-color #7f93b6
-    border none
     &:active
       box-shadow(0 0 20px #7f93b6)
   &:active
@@ -167,6 +170,53 @@ label
 .professionals-2
   h5
     margin 0
+    
+.professionals-4
+  .open-quote
+    margin-top 1em
+    margin-bottom 0
+    font-size 5em
+    text-align left
+    line-height 0
+  .close-quote
+    margin-top 0.5em
+    margin-bottom 0
+    font-size 5em
+    text-align right
+    line-height 0
+  .quote
+    margin 0 30px
+    
+.professionals-5
+  .price-panel
+    position relative
+    min-height 620px
+    background-color #fff
+    border solid thin #c4cbd8
+    p
+      margin 1em 0
+    .head
+      overflow auto
+      text-align center
+    .content
+      padding 0 15px 110px
+    .foot
+      position absolute
+      bottom 0
+      left 0
+      right 0
+      padding 15px 15px 0
+      text-align center
+      
+  .basic
+    margin-left 20%
+    .head
+      background-color header-bg-color
+    
+  .paid
+    margin-right 20%
+    .head
+      background-color #c4cbd8
 
 // Contact Page // ------------------------------------------------
 
