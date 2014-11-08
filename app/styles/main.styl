@@ -90,6 +90,12 @@ body
     background-color #7f93b6
     &:active
       box-shadow(0 0 20px #7f93b6)
+  &.colored.lightgray
+    color site-text-color
+    background-color #f3f5f2
+    &:active
+      background-color darken(#f3f5f2,7.5)
+      box-shadow(0 0 20px #f3f5f2)
   &:active
     box-shadow(0 0 20px site-text-color)
 
@@ -97,6 +103,13 @@ body
   width 100%
 .full-height
   height 100%
+  
+.md-form
+  max-width 500px
+  margin 0 auto
+  
+  .md-btn
+    min-width 100px
   
 // Header // ------------------------------------------------------
 

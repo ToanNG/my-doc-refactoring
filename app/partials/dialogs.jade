@@ -1,0 +1,25 @@
+#login-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h4#myModalLabel.modal-title Modal title
+      .modal-body
+        form.md-form.login-form(role="form")
+          .form-group
+            label Email address
+            span.pull-right Need an account? 
+              a(href="" data-toggle="modal" data-target="#signup-dialog") Sign up
+            input.form-control(type="text" placeholder="Enter email")
+          .form-group
+            label Password
+            input.form-control(type="text" placeholder="Enter password")
+            a(href="") Forgotten your password?
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Login &nbsp;
+            button.btn.md-btn.rounded.colored.lightgray(type="button" data-dismiss="modal") Cancel
+          .form-group
+            | By logging in you agree to MyDoc's 
+            a(href="terms.html") Terms & Conditions
