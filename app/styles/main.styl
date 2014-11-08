@@ -27,6 +27,12 @@ body
     line-height 1.5em
     font-size 1.17em
     font-weight 400
+    
+  .form-control
+    border solid thin #606c84 !important
+
+  label
+    font-weight 300 !important
   
 .md-container
   max-width 960px
@@ -37,14 +43,11 @@ body
 .padding-15
   padding 15px
   
+.no-padding
+  padding 0
+  
 .colored-bg
   background-color header-bg-color
-
-.form-control
-  border solid thin #606c84 !important
-
-label
-  font-weight 300 !important
 
 .md-btn
   outline none !important
@@ -89,6 +92,8 @@ label
 
 .full-width
   width 100%
+.full-height
+  height 100%
   
 // Header // ------------------------------------------------------
 
@@ -133,8 +138,70 @@ label
     color footer-text-color
     text-decoration none
   
-// Home Page // ---------------------------------------------------
+// Index Page // --------------------------------------------------
 
+.index-desktop
+  overflow hidden
+  
+  .md-container
+    max-width 768px
+  .colored-bg
+    background-color #f8f9f7
+  h1
+    font-size 28px
+  ul
+    padding-left 15px
+    
+  .row
+    position relative
+    height 100%
+    
+    .bg-img
+      position absolute
+      bottom 0
+      height 90%
+      &.pos-left
+        right 45%
+        text-align right // IE fix
+      &.pos-right
+        left 60%
+      img
+        display inline-block // IE fix
+        
+    .content
+      &.pos-left
+        padding 50px 0 0 100px
+      &.pos-right
+        padding 50px 0 0 75px
+    
+  .index-1
+    background transparent url(../images/index_s1_bg.png) center bottom no-repeat
+    background-size cover
+    -ms-behavior url("../polyfills/backgroundsize.min.htc")
+    .md-container
+      height 360px
+      background transparent url(../images/index_s1_1.png) center bottom no-repeat
+    .bg-img.pos-left
+        right 55%
+      
+  .index-2>.md-container
+    height 330px
+    background transparent url(../images/index_s2_1.png) center top no-repeat
+  
+  .index-3>.md-container
+    height 330px
+    background transparent url(../images/index_s3_1.png) center top no-repeat
+    
+  .index-4>.md-container
+    height 330px
+    background transparent url(../images/index_s4_1.png) center top no-repeat
+  
+  .index-5>.md-container
+    height 330px
+    background transparent url(../images/index_s5_1.png) center top no-repeat
+    .bg-img
+      height 80%
+    
 // Patients Page // -----------------------------------------------
 
 .patients-1
