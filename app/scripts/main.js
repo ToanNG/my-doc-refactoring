@@ -1,3 +1,5 @@
-(function() {
-  console.log('Hello Hearty Brunch!');
-})();
+$(function(){
+  $('#menu-btn').click(function(){
+    $(this).toggleClass('active');
+  });
+});
