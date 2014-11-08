@@ -6,7 +6,10 @@ exports.config =
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^(bower_components|vendor)/
       order:
-        before: []
+        before: [
+          'vendor/scripts/jquery.js',
+          'vendor/scripts/bootstrap.js'
+        ]
 
     stylesheets:
       joinTo:

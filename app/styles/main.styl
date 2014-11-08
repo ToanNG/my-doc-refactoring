@@ -118,8 +118,15 @@ body
     margin-bottom 0
     line-height header-height
     
+    li
+      padding 0 15px
+      &:hover
+        a
+          color site-text-color
+    
     a
       color header-text-color
+      text-decoration none
       
   #login-btn
     margin 27px 0 0 15px
@@ -272,7 +279,8 @@ body
           width 150%
     
     .content
-      max-width 300px
+      box-sizing(content-box) // IE fix
+      max-width 215px // IE fix
       margin 0 auto
       padding 10px 15px 15px 70px
   
