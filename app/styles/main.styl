@@ -162,7 +162,6 @@ hr.or
     
   #menu-btn
     display none
-    overflow hidden
     position relative
     width 60px
     height 60px
@@ -173,11 +172,13 @@ hr.or
     cursor pointer
     z-index 10
     &.active
-      overflow visible
       background #273759 url(../images/menu_icon2.png) center no-repeat
       background-size 40%
+      .menu
+        display block
       
     .menu
+      display none
       position absolute
       top 60px
       right 0

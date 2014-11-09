@@ -1,7 +1,10 @@
 $(function(){
   $.placeholder();
   
-  $('#menu-btn').click(function(){
+  $('#main, .index-mobile').click(function(e){
+    $('#menu-btn').removeClass('active');
+  });
+  $('#menu-btn').click(function(e){
     $(this).toggleClass('active');
   });
 
