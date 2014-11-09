@@ -17,10 +17,164 @@
     <script src="/javascripts/app.js"></script>
   </head>
   <body class="md-body">
+    <div id="patients-login-dialog" tabindex="-1" role="dialog" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header md-modal-header clearfix">
+            <h4 class="modal-title login-title active">Patients</h4>
+            <h4 class="modal-title login-title show-professionals-login-dialog">Professionals</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form" class="md-form">
+              <div class="form-group">
+                <label>Email address</label><span class="pull-right">Need an account? <a href="" data-toggle="modal" class="show-patients-signup-dialog">Sign up</a></span>
+                <input type="text" placeholder="Enter email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="text" placeholder="Enter password" class="form-control"><a href="" class="show-forgotpassword-dialog">Forgotten your password?</a>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn md-btn rounded colored darkblue">Login &nbsp;</button>
+                <button type="button" data-dismiss="modal" class="btn md-btn rounded colored lightgray">Cancel</button>
+              </div>
+              <div class="form-group">By logging in you agree to MyDoc's <a href="terms.html">Terms & Conditions</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="professionals-login-dialog" tabindex="-1" role="dialog" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header md-modal-header clearfix">
+            <h4 class="modal-title login-title show-patients-login-dialog">Patients</h4>
+            <h4 class="modal-title login-title active">Professionals</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form" class="md-form">
+              <div class="form-group">
+                <label>Email address</label><span class="pull-right">Need an account? <a href="" data-toggle="modal" class="show-professionals-signup-dialog">Sign up</a></span>
+                <input type="text" placeholder="Enter email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="text" placeholder="Enter password" class="form-control"><a href="" class="show-forgotpassword-dialog">Forgotten your password?</a>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn md-btn rounded colored darkblue">Login &nbsp;</button>
+                <button type="button" data-dismiss="modal" class="btn md-btn rounded colored lightgray">Cancel</button>
+              </div>
+              <div class="form-group">By logging in you agree to MyDoc's <a href="terms.html">Terms & Conditions</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="patients-signup-dialog" tabindex="-1" role="dialog" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" data-dismiss="modal" class="close"><span>&times;</span><span class="sr-only">Close</span></button>
+            <h2 class="modal-title">Registration Form</h2>
+          </div>
+          <div class="modal-body">
+            <form role="form" class="md-form">
+              <div class="form-group">
+                <input type="text" value="+65" class="form-control"><small class="gray-text">&nbsp;&nbsp; (Don't worry, only used for verification)</small>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Enter the code sent to your phone" class="form-control"><small>&nbsp;&nbsp;<a href="">Send code</a></small>
+              </div>
+              <hr>
+              <div class="form-group">
+                <input type="text" value="+65 8389 9492" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="First name" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Last name" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" class="form-control"><small class="gray-text">&nbsp;&nbsp; (This will be your username for the login)</small>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control"><small class="gray-text">&nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)</small>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Confirm password" class="form-control">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">I accept the <a href="terms.html">Terms & Conditions</a>
+                </label>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn md-btn rounded colored darkblue">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="professionals-signup-dialog" tabindex="-1" role="dialog" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" data-dismiss="modal" class="close"><span>&times;</span><span class="sr-only">Close</span></button>
+            <h2 class="modal-title">Registration Form</h2>
+          </div>
+          <div class="modal-body">
+            <form role="form" class="md-form">
+              <div class="form-group">
+                <input type="text" value="+65" class="form-control"><small class="gray-text">&nbsp;&nbsp; (Don't worry, only used for verification)</small>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Enter the code sent to your phone" class="form-control"><small>&nbsp;&nbsp;<a href="">Send code</a></small>
+              </div>
+              <hr>
+              <div class="form-group">
+                <input type="text" value="+65 8389 9492" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="First name" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Last name" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Title" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Enter your MCR number *" class="form-control"><small class="gray-text">&nbsp;&nbsp; *It's optional. But it would be easier for us to verify you as a professional.</small>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" class="form-control"><small class="gray-text">&nbsp;&nbsp; (This will be your username for the login)</small>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control"><small class="gray-text">&nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)</small>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Confirm password" class="form-control">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">I accept the <a href="terms.html">Terms & Conditions</a>
+                </label>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn md-btn rounded colored darkblue">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="header">
       <div class="md-container">
         <div class="logo pull-left"></div>
-        <button id="login-btn" type="button" data-toggle="modal" data-target="#login-dialog" class="btn md-btn rounded pull-right">Sign in</button>
+        <button id="login-btn" type="button" data-toggle="modal" data-target="#patients-login-dialog" class="btn md-btn rounded pull-right">Sign in</button>
         <ul class="md-navbar list-inline pull-right">
           <li><a href="patients.html">Patients</a></li>
           <li><a href="professionals.html">Professionals</a></li>

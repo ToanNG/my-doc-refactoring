@@ -1,25 +1,132 @@
-#login-dialog.modal(tabindex="-1" role="dialog")
+#patients-login-dialog.modal(tabindex="-1" role="dialog")
   .modal-dialog
     .modal-content
-      .modal-header
-        button.close(type="button" data-dismiss="modal")
-          span &times;
-          span.sr-only Close
-        h4#myModalLabel.modal-title Modal title
+      .modal-header.md-modal-header.clearfix
+        h4.modal-title.login-title.active Patients
+        h4.modal-title.login-title.show-professionals-login-dialog Professionals
       .modal-body
-        form.md-form.login-form(role="form")
+        form.md-form(role="form")
           .form-group
             label Email address
             span.pull-right Need an account? 
-              a(href="" data-toggle="modal" data-target="#signup-dialog") Sign up
+              a.show-patients-signup-dialog(href="" data-toggle="modal") Sign up
             input.form-control(type="text" placeholder="Enter email")
           .form-group
             label Password
             input.form-control(type="text" placeholder="Enter password")
-            a(href="") Forgotten your password?
+            a.show-forgotpassword-dialog(href="") Forgotten your password?
           .form-group
             button.btn.md-btn.rounded.colored.darkblue(type="submit") Login &nbsp;
             button.btn.md-btn.rounded.colored.lightgray(type="button" data-dismiss="modal") Cancel
           .form-group
             | By logging in you agree to MyDoc's 
             a(href="terms.html") Terms & Conditions
+
+#professionals-login-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.md-modal-header.clearfix
+        h4.modal-title.login-title.show-patients-login-dialog Patients
+        h4.modal-title.login-title.active Professionals
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            label Email address
+            span.pull-right Need an account? 
+              a.show-professionals-signup-dialog(href="" data-toggle="modal") Sign up
+            input.form-control(type="text" placeholder="Enter email")
+          .form-group
+            label Password
+            input.form-control(type="text" placeholder="Enter password")
+            a.show-forgotpassword-dialog(href="") Forgotten your password?
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Login &nbsp;
+            button.btn.md-btn.rounded.colored.lightgray(type="button" data-dismiss="modal") Cancel
+          .form-group
+            | By logging in you agree to MyDoc's 
+            a(href="terms.html") Terms & Conditions
+
+#patients-signup-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h2.modal-title Registration Form
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            input.form-control(type="text" value="+65")
+            small.gray-text &nbsp;&nbsp; (Don't worry, only used for verification)
+          .form-group
+            input.form-control(type="text" placeholder="Enter the code sent to your phone")
+            small &nbsp;&nbsp;
+              a(href="") Send code
+          hr
+          .form-group
+            input.form-control(type="text" value="+65 8389 9492")
+          .form-group
+            input.form-control(type="text" placeholder="First name")
+          .form-group
+            input.form-control(type="text" placeholder="Last name")
+          .form-group
+            input.form-control(type="email" placeholder="Email")
+            small.gray-text &nbsp;&nbsp; (This will be your username for the login)
+          .form-group
+            input.form-control(type="password" placeholder="Password")
+            small.gray-text &nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)
+          .form-group
+            input.form-control(type="password" placeholder="Confirm password")
+          .checkbox
+            label
+              input(type="checkbox")
+              | I accept the 
+              a(href="terms.html") Terms & Conditions
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Register
+
+#professionals-signup-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h2.modal-title Registration Form
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            input.form-control(type="text" value="+65")
+            small.gray-text &nbsp;&nbsp; (Don't worry, only used for verification)
+          .form-group
+            input.form-control(type="text" placeholder="Enter the code sent to your phone")
+            small &nbsp;&nbsp;
+              a(href="") Send code
+          hr
+          .form-group
+            input.form-control(type="text" value="+65 8389 9492")
+          .form-group
+            input.form-control(type="text" placeholder="First name")
+          .form-group
+            input.form-control(type="text" placeholder="Last name")
+          .form-group
+            input.form-control(type="text" placeholder="Title")
+          .form-group
+            input.form-control(type="text" placeholder="Enter your MCR number *")
+            small.gray-text &nbsp;&nbsp; *It's optional. But it would be easier for us to verify you as a professional.
+          .form-group
+            input.form-control(type="email" placeholder="Email")
+            small.gray-text &nbsp;&nbsp; (This will be your username for the login)
+          .form-group
+            input.form-control(type="password" placeholder="Password")
+            small.gray-text &nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)
+          .form-group
+            input.form-control(type="password" placeholder="Confirm password")
+          .checkbox
+            label
+              input(type="checkbox")
+              | I accept the 
+              a(href="terms.html") Terms & Conditions
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Register

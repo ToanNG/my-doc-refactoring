@@ -49,6 +49,9 @@ body
 .colored-bg
   background-color header-bg-color
   
+.gray-text
+  color gray
+  
 .border-top
   border-top solid 2px #fff
 
@@ -181,7 +184,32 @@ body
         text-decoration none
         &:hover
           color #fff
+
+// Dialog // ------------------------------------------------------
+
+.modal-content
+  overflow hidden
+  .modal-header
+    border-bottom none
+    h2
+      font-weight 300
   
+.md-modal-header
+  height 56px
+  padding 0
+  
+.login-title
+  float left
+  display block
+  width 50%
+  height 100%
+  line-height 56px
+  text-align center
+  background-color header-bg-color
+  cursor pointer
+  &.active
+    background-color #fff
+
 // Main // --------------------------------------------------------
       
 #main
