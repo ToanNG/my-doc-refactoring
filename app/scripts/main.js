@@ -1,4 +1,6 @@
 $(function(){
+  $.placeholder();
+  
   $('#menu-btn').click(function(){
     $(this).toggleClass('active');
   });
