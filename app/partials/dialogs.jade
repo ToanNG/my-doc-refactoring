@@ -14,7 +14,7 @@
           .form-group
             label Password
             input.form-control(type="text" placeholder="Enter password")
-            a.show-forgotpassword-dialog(href="") Forgotten your password?
+            a.show-forgotpassword-dialog(href="" data-toggle="modal") Forgotten your password?
           .form-group
             button.btn.md-btn.rounded.colored.darkblue(type="submit") Login &nbsp;
             button.btn.md-btn.rounded.colored.lightgray(type="button" data-dismiss="modal") Cancel
@@ -38,7 +38,7 @@
           .form-group
             label Password
             input.form-control(type="text" placeholder="Enter password")
-            a.show-forgotpassword-dialog(href="") Forgotten your password?
+            a.show-forgotpassword-dialog(href="" data-toggle="modal") Forgotten your password?
           .form-group
             button.btn.md-btn.rounded.colored.darkblue(type="submit") Login &nbsp;
             button.btn.md-btn.rounded.colored.lightgray(type="button" data-dismiss="modal") Cancel
@@ -130,3 +130,91 @@
               a(href="terms.html") Terms & Conditions
           .form-group
             button.btn.md-btn.rounded.colored.darkblue(type="submit") Register
+
+#forgotpassword-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h2.modal-title Forgot your password?
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            label Enter your email address
+            input.form-control(type="email" placeholder="Enter email")
+          hr.or
+          .form-group
+            label Enter your mobile number
+            input.form-control(type="text" value="+65")
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Request reset code
+
+#verify-phone-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h2.modal-title Reset your password
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            label Enter the code sent to your phone number ending in 83.
+            input.form-control(type="text")
+            br
+          .form-group
+            label Didn't receive the text message?
+            ul
+              li
+                a(href="") Resend text message
+              li
+                a(href="") Try resetting using email
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Next
+
+#verify-email-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h2.modal-title Reset your password
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            label Enter the code sent to your email address.
+            input.form-control(type="text")
+            br
+          .form-group
+            label Didn't receive the email?
+            ul
+              li
+                a(href="") Resend email
+              li
+                a(href="") Try resetting using phone
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Next
+
+#resetpassword-dialog.modal(tabindex="-1" role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        button.close(type="button" data-dismiss="modal")
+          span &times;
+          span.sr-only Close
+        h2.modal-title Reset your password
+      .modal-body
+        form.md-form(role="form")
+          .form-group
+            label New password
+            input.form-control(type="password")
+            small.gray-text &nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)
+          .form-group
+            label Confirm password
+            input.form-control(type="password")
+          .form-group
+            button.btn.md-btn.rounded.colored.darkblue(type="submit") Next

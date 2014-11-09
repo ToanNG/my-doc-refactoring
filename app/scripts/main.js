@@ -15,6 +15,9 @@ $(function(){
   $('.show-professionals-signup-dialog').click(function(){
     showProfessionalsSignupDialog();
   });
+  $('.show-forgotpassword-dialog').click(function(){
+    showForgotPasswordDialog();
+  });
 });
 
 function showPatientsLoginDialog(){
@@ -35,4 +38,24 @@ function showPatientsSignupDialog(){
 function showProfessionalsSignupDialog(){
   $('.modal').modal('hide');
   $('#professionals-signup-dialog').modal('show');
+}
+
+function showForgotPasswordDialog(){
+  $('.modal').modal('hide');
+  $('#forgotpassword-dialog').modal('show');
+}
+
+function showVerifyPhoneDialog(){
+  $('.modal').modal('hide');
+  $('#verify-phone-dialog').modal('show');
+}
+
+function showVerifyEmailDialog(){
+  $('.modal').modal('hide');
+  $('#verify-email-dialog').modal('show');
+}
+
+function showResetPasswordDialog(){
+  $('.modal').modal('hide');
+  $('#resetpassword-dialog').modal('show');
 }
