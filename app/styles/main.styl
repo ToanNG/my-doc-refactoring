@@ -150,9 +150,11 @@ hr.or
 // Header // ------------------------------------------------------
 
 #header
+  position absolute
+  width 100%
   height header-height
   color header-text-color
-  background-color header-bg-color
+  z-index 1
   
   .logo
     height 100%
@@ -249,7 +251,9 @@ hr.or
       
 #main
   position relative
-  // min-height 100%
+  
+  .section:first-child
+    padding-top header-height
  
 // Footer // ------------------------------------------------------
 
@@ -314,6 +318,7 @@ hr.or
       height 100% !important
     
   .index-1
+    padding-top header-height
     background transparent url(../images/index_s1_bg.png) center bottom no-repeat
     background-size cover
     -ms-behavior url("../polyfills/backgroundsize.min.htc")
