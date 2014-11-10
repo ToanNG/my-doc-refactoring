@@ -217,6 +217,7 @@ hr.or
         color rgba(255,255,255,.6)
         text-decoration none
         &:hover
+          background-color darken(#273759,15%)
           color #fff
 
 // Dialog // ------------------------------------------------------
@@ -271,8 +272,10 @@ hr.or
   .md-container
     max-width 768px
   .colored-bg
-    background-color #f8f9f7
-    box-shadow(inset 0 15px 100px #b9bcc4)
+    background #f8f9f7 url(../images/gradient.png) right no-repeat
+    background-size auto 100%
+    -ms-behavior url("../polyfills/backgroundsize.min.htc")
+    // box-shadow(inset 0 15px 100px #b9bcc4)
   h1
     font-size 28px
   ul

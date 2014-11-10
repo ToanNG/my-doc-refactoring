@@ -1,5 +1,16 @@
 $(function(){
   $.placeholder();
+
+  $("#professionals-get-started").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#pricing").offset().top
+    }, 1000);
+  });
+  $("#home-get-started").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#patients").offset().top
+    }, 500);
+  });
   
   $('#main, .index-mobile').click(function(e){
     $('#menu-btn').removeClass('active');
