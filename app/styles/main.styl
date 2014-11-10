@@ -276,10 +276,12 @@ hr.or
   .md-container
     max-width 768px
   .colored-bg
-    background #f8f9f7 url(../images/gradient.png) right no-repeat
+    background #f8f9f7 url(../images/gradient.png) right top no-repeat
     background-size auto 100%
     -ms-behavior url("../polyfills/backgroundsize.min.htc")
-    // box-shadow(inset 0 15px 100px #b9bcc4)
+    &.index-3
+    &.index-5
+      background #f8f9f7 url(../images/gradient_left.png) left top no-repeat
   h1
     font-size 28px
   ul
