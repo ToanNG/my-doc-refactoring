@@ -172,6 +172,7 @@ hr.or
     li
       padding 0 15px
       &:hover
+      &.active
         a
           color site-text-color
     
@@ -219,6 +220,7 @@ hr.or
         color rgba(255,255,255,.6)
         text-decoration none
         &:hover
+        &:active
           background-color darken(#273759,15%)
           color #fff
 
@@ -266,6 +268,7 @@ hr.or
     color footer-text-color
     text-decoration none
     &:hover
+    &:active
       text-decoration underline
   
 // Index Page // --------------------------------------------------
@@ -277,8 +280,6 @@ hr.or
     max-width 768px
   .colored-bg
     background #f8f9f7 url(../images/gradient.png) right top no-repeat
-    background-size auto 100%
-    -ms-behavior url("../polyfills/backgroundsize.min.htc")
     &.index-3
     &.index-5
       background #f8f9f7 url(../images/gradient_left.png) left top no-repeat
