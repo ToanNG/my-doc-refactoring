@@ -85,22 +85,32 @@ body
     background-color #50d869
     &:active
       box-shadow(0 0 20px #50d869)
+    &:hover
+      background-color darken(#50d869,25%)
   &.colored.blue
     background-color #57a6fd
     &:active
       box-shadow(0 0 20px #57a6fd)
+    &:hover
+      background-color darken(#57a6fd,25%)
   &.colored.darkblue
     background-color #7f93b6
     &:active
       box-shadow(0 0 20px #7f93b6)
+    &:hover
+      background-color darken(#7f93b6,25%)
   &.colored.lightgray
     color site-text-color
     background-color #f3f5f2
     &:active
-      background-color darken(#f3f5f2,7.5)
+      background-color darken(#f3f5f2,10%)
       box-shadow(0 0 20px #f3f5f2)
+    &:hover
+      background-color darken(#f3f5f2,10%)
   &:active
     box-shadow(0 0 20px site-text-color)
+  &:hover
+    background-color rgba(0,0,0,.1)
 
 hr.or
   position relative
@@ -240,6 +250,8 @@ hr.or
   a
     color footer-text-color
     text-decoration none
+    &:hover
+      text-decoration underline
   
 // Index Page (Desktop) // ----------------------------------------
 
