@@ -13,10 +13,66 @@
       
   // Index Page
   
-  .index-desktop
-    display none
-  .index-mobile
-    display block
+  .index-wrapper
+    .row
+      .bg-img
+        position relative
+        bottom auto
+        height auto
+        
+        max-width 280px
+        margin 0 auto
+        padding-left 30px
+        &.pos-left
+          right auto
+        &.pos-right
+          left auto
+        img
+          &.full-height
+            width 150%
+            height auto
+    
+      .content
+        float none
+        width auto
+        
+        box-sizing(content-box) // IE fix
+        max-width 215px // IE fix
+        margin 0 auto
+        &.pos-left
+        &.pos-right
+          padding 10px 15px 15px 70px
+      
+    .index-0
+      display block
+      
+    .index-1
+      background-color header-bg-color
+      background-image none
+      .md-container
+        height auto
+        background transparent url(../images/index_s1_1_mb.png) center bottom no-repeat
+        .bg-img
+          display none
+        .content
+          max-width none
+          padding 15px
+        
+    .index-2>.md-container
+      height auto
+      background transparent url(../images/index_s2_1_mb.png) center top no-repeat
+      
+    .index-3>.md-container
+      height auto
+      background transparent url(../images/index_s3_1_mb.png) center top no-repeat
+      
+    .index-4>.md-container
+      height auto
+      background transparent url(../images/index_s4_1_mb.png) center top no-repeat
+      
+    .index-5>.md-container
+      height auto
+      background transparent url(../images/index_s5_1_mb.png) center top no-repeat
 
   // Patients Page
     

@@ -253,9 +253,9 @@ hr.or
     &:hover
       text-decoration underline
   
-// Index Page (Desktop) // ----------------------------------------
+// Index Page // --------------------------------------------------
 
-.index-desktop
+.index-wrapper
   overflow hidden
   
   .md-container
@@ -289,7 +289,17 @@ hr.or
         padding 50px 0 0 100px
       &.pos-right
         padding 50px 0 0 75px
-        
+  
+  .index-0
+    display none
+    height 240px
+    background transparent url(../images/index_s1_bg.png) center bottom no-repeat
+    background-size cover
+    -ms-behavior url("../polyfills/backgroundsize.min.htc")
+    .bg-img
+    img
+      height 100% !important
+    
   .index-1
     background transparent url(../images/index_s1_bg.png) center bottom no-repeat
     background-size cover
@@ -317,62 +327,6 @@ hr.or
     background transparent url(../images/index_s5_1.png) center top no-repeat
     .bg-img
       height 80%
-  
-// Index Page (Mobile) // -----------------------------------------
-
-.index-mobile
-  display none
-  overflow hidden
-  
-  .colored-bg
-    background-color #f8f9f7
-    box-shadow(inset 0 15px 100px #b9bcc4)
-  h1
-    font-size 28px
-  ul
-    padding-left 15px
-  
-  .row
-    position relative
-    height 100%
-    
-    .bg-img
-      max-width 280px
-      margin 0 auto
-      padding-left 30px
-      img
-        display inline-block
-        &.full-width
-          width 150%
-    
-    .content
-      box-sizing(content-box) // IE fix
-      max-width 215px // IE fix
-      margin 0 auto
-      padding 10px 15px 15px 70px
-  
-  .index-0
-    height 240px
-    background transparent url(../images/index_s1_bg.png) center bottom no-repeat
-    background-size cover
-    -ms-behavior url("../polyfills/backgroundsize.min.htc")
-  
-  .index-1
-    background-color header-bg-color
-    .md-container
-      background transparent url(../images/index_s1_1_mb.png) center bottom no-repeat
-      
-  .index-2>.md-container
-    background transparent url(../images/index_s2_1_mb.png) center top no-repeat
-    
-  .index-3>.md-container
-    background transparent url(../images/index_s3_1_mb.png) center top no-repeat
-    
-  .index-4>.md-container
-    background transparent url(../images/index_s4_1_mb.png) center top no-repeat
-    
-  .index-5>.md-container
-    background transparent url(../images/index_s5_1_mb.png) center top no-repeat
     
 // Patients Page // -----------------------------------------------
 
