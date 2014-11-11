@@ -53,31 +53,29 @@
         button.close(type="button" data-dismiss="modal")
           span &times;
           span.sr-only Close
-        h2.modal-title Registration Form
+        h2.modal-title Create your Patient account
       .modal-body
         form.md-form(role="form")
           .form-group
+            label Mobile number
             input.form-control(type="text" value="+65")
-            small.gray-text &nbsp;&nbsp; (Don't worry, only used for verification)
+            small &nbsp;&nbsp;
+              a(href="") Get Registration Code
           .form-group
             input.form-control(type="text" placeholder="Enter the code sent to your phone")
-            small &nbsp;&nbsp;
-              a(href="") Send code
           hr
           .form-group
-            input.form-control(type="text" value="+65 8389 9492")
+            label Given name
+            input.form-control(type="text")
           .form-group
-            input.form-control(type="text" placeholder="First name")
+            label Email address
+            input.form-control(type="email" placeholder="This will be your username for the logging in")
           .form-group
-            input.form-control(type="text" placeholder="Last name")
+            label Password
+            input.form-control(type="password" placeholder="Password must be 8-12 alphanumeric characters")
           .form-group
-            input.form-control(type="email" placeholder="Email")
-            small.gray-text &nbsp;&nbsp; (This will be your username for the login)
-          .form-group
-            input.form-control(type="password" placeholder="Password")
-            small.gray-text &nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)
-          .form-group
-            input.form-control(type="password" placeholder="Confirm password")
+            label Confirm password
+            input.form-control(type="password" placeholder="")
           .checkbox
             label
               input(type="checkbox")
@@ -93,36 +91,38 @@
         button.close(type="button" data-dismiss="modal")
           span &times;
           span.sr-only Close
-        h2.modal-title Registration Form
+        h2.modal-title Create your Professional account
       .modal-body
         form.md-form(role="form")
           .form-group
+            label Mobile number
             input.form-control(type="text" value="+65")
-            small.gray-text &nbsp;&nbsp; (Don't worry, only used for verification)
+            small &nbsp;&nbsp;
+              a(href="") Get Registration Code
           .form-group
             input.form-control(type="text" placeholder="Enter the code sent to your phone")
-            small &nbsp;&nbsp;
-              a(href="") Send code
           hr
           .form-group
-            input.form-control(type="text" value="+65 8389 9492")
+            label Title
+            input.form-control(type="text")
           .form-group
-            input.form-control(type="text" placeholder="First name")
+            label First name
+            input.form-control(type="text")
           .form-group
-            input.form-control(type="text" placeholder="Last name")
+            label Last name
+            input.form-control(type="text")
           .form-group
-            input.form-control(type="text" placeholder="Title")
+            label MCR number*
+            input.form-control(type="text" placeholder="*This is optional. This is for easy verification as a professional.")
           .form-group
-            input.form-control(type="text" placeholder="Enter your MCR number *")
-            small.gray-text &nbsp;&nbsp; *It's optional. But it would be easier for us to verify you as a professional.
+            label Email address
+            input.form-control(type="email" placeholder="This will be your username for the logging in")
           .form-group
-            input.form-control(type="email" placeholder="Email")
-            small.gray-text &nbsp;&nbsp; (This will be your username for the login)
+            label Password
+            input.form-control(type="password" placeholder="Password must be 8-12 alphanumeric characters")
           .form-group
-            input.form-control(type="password" placeholder="Password")
-            small.gray-text &nbsp;&nbsp; (Password must be 8-12 alphanumeric characters)
-          .form-group
-            input.form-control(type="password" placeholder="Confirm password")
+            label Confirm password
+            input.form-control(type="password")
           .checkbox
             label
               input(type="checkbox")
